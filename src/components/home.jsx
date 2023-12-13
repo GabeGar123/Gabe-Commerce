@@ -1,4 +1,5 @@
 import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import imageBanner from '../assets/Images/banner.jpg';
 import menShoeImage from '../assets/Images/shoe1.jpg';
 import womenShoeImage from '../assets/Images/shoe2.jpg';
@@ -42,22 +43,26 @@ function homePage() {
         </div>
       </div>
 
-      <div id="collection">
-        <div id="men-option" class="collection-box-1">
-          <img src={menShoeImage} ></img>
-          <h3>Shop Men</h3>
+      <div id="collection" class="container text-center">
+        <div class="row">
+          <div id="men-option" class="collection-box-1 col">
+            <img src={menShoeImage} ></img>
+            <h3>Shop Men</h3>
+          </div>
+          <div id="women-option" class="collection-box-2 col">
+            <img src={womenShoeImage}></img>
+            <h3>Shop Women</h3>
+          </div>
         </div>
-        <div id="women-option" class="collection-box-2">
-          <img src={womenShoeImage}></img>
-          <h3>Shop Women</h3>
-        </div>
-        <div id="shoe-option" class="collection-box-3">
-          <img src={kidsShoeImage}></img>
-          <h3>Shop Kids</h3>
-        </div>
-        <div id="sports-option" class="collection-box-4">
-          <img src={sportsShoeImage}></img>
-          <h3>Shop Sports</h3>
+        <div class="row">
+          <div id="shoe-option" class="collection-box-3 col">
+            <img src={kidsShoeImage}></img>
+            <h3>Shop Kids</h3>
+          </div>
+          <div id="sports-option" class="collection-box-4 col">
+            <img src={sportsShoeImage}></img>
+            <h3>Shop Sports</h3>
+          </div>
         </div>
         </div>
     </>
