@@ -22,11 +22,32 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  padding: 1rem 0 1rem 0;
 }
 
 img {
   width: 100%;
   margin: 0 auto;
+}
+
+#men-option{
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  border: 1px solid black;
+}
+
+#women-option{
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  border: 1px solid black;
+}
+
+#shoe-option{
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  border: 1px solid black;
+}
+
+#sports-option{
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  border: 1px solid black;
 }
 
 @media (max-width: 925px) {

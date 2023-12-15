@@ -10,7 +10,7 @@ import sportsShoeImage from "../assets/Images/shoe4.jpg";
 function homePage() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
         <a class="navbar-brand mb-0" href="#">
           Gabe Commerce
         </a>
@@ -78,36 +78,34 @@ function homePage() {
           alt="main page banner"
         ></img>
         <div class="banner-item-2">
-          <p>Shop the latest trends in fashion</p>
+          <h3>Shop the latest trends in fashion</h3>
         </div>
       </div>
 
       <div id="collection" class="container text-center">
         <div class="row">
-          <div id="men-option" class="collection-box-1 col">
+          <div id="men-option" class="col">
             <img src={menShoeImage}></img>
             <h3>Shop Men</h3>
           </div>
-          <div id="women-option" class="collection-box-2 col">
+          <div id="women-option" class="col">
             <img src={womenShoeImage}></img>
             <h3>Shop Women</h3>
           </div>
         </div>
         <div class="row">
-          <div id="shoe-option" class="collection-box-3 col">
+          <div id="shoe-option" class="col">
             <img src={kidsShoeImage}></img>
             <h3>Shop Kids</h3>
           </div>
-          <div id="sports-option" class="collection-box-4 col">
+          <div id="sports-option" class="col">
             <img src={sportsShoeImage}></img>
             <h3>Shop Sports</h3>
           </div>
         </div>
       </div>
 
-      <div id="footer">
-        <p>Footer</p>
-      </div>
+      <div class="container-fluid my-5" id="footer"></div>
     </>
   );
 }
