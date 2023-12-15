@@ -1,44 +1,83 @@
-import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import imageBanner from '../assets/Images/banner.jpg';
-import menShoeImage from '../assets/Images/shoe1.jpg';
-import womenShoeImage from '../assets/Images/shoe2.jpg';
-import kidsShoeImage from '../assets/Images/shoe3.jpg';
-import sportsShoeImage from '../assets/Images/shoe4.jpg';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../App.css";
+import imageBanner from "../assets/Images/banner.jpg";
+import menShoeImage from "../assets/Images/shoe1.jpg";
+import womenShoeImage from "../assets/Images/shoe2.jpg";
+import kidsShoeImage from "../assets/Images/shoe3.jpg";
+import sportsShoeImage from "../assets/Images/shoe4.jpg";
 
 function homePage() {
   return (
     <>
-      <div id="header">
-        <ul id="nav-bar">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#news">Men</a>
-          </li>
-          <li>
-            <a href="#contact">Women</a>
-          </li>
-          <li>
-            <a href="#about">Kids</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#about">Sign In</a>
-          </li>
-          <li>
-            <a href="#about">Cart</a>
-          </li>
-        </ul>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mb-0" href="#">
+          Gabe Commerce
+        </a>
 
-      <div class="banner-container">
-        <img src = {imageBanner} class = "banner-item-1" alt="main page banner"></img>
-        <div class = "banner-item-2">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav" id="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#news" class="nav-link">
+                Men
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                Women
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                Kids
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                Sign In
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                Cart
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="banner-container">
+        <img
+          src={imageBanner}
+          class="banner-item-1 image-fluid"
+          alt="main page banner"
+        ></img>
+        <div class="banner-item-2">
           <p>Shop the latest trends in fashion</p>
         </div>
       </div>
@@ -46,7 +85,7 @@ function homePage() {
       <div id="collection" class="container text-center">
         <div class="row">
           <div id="men-option" class="collection-box-1 col">
-            <img src={menShoeImage} ></img>
+            <img src={menShoeImage}></img>
             <h3>Shop Men</h3>
           </div>
           <div id="women-option" class="collection-box-2 col">
@@ -64,7 +103,11 @@ function homePage() {
             <h3>Shop Sports</h3>
           </div>
         </div>
-        </div>
+      </div>
+
+      <div id="footer">
+        <p>Footer</p>
+      </div>
     </>
   );
 }
