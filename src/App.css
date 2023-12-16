@@ -18,7 +18,8 @@
   height: 30rem;
 }
 .banner-item-2 {
-  background-color: lightgray;
+  background-color: black;
+  color: white;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -31,23 +32,28 @@ img {
 }
 
 #men-option{
-  margin: 1rem 1.5rem 0rem 1.5rem;
+  margin: 2rem 1.5rem 1rem 1.5rem;
   border: 1px solid black;
 }
 
 #women-option{
-  margin: 1rem 1.5rem 0rem 1.5rem;
+  margin: 2rem 1.5rem 1rem 1.5rem;
   border: 1px solid black;
 }
 
 #shoe-option{
-  margin: 1rem 1.5rem 0rem 1.5rem;
+  margin: 2rem 1.5rem 1rem 1.5rem;
   border: 1px solid black;
 }
 
 #sports-option{
-  margin: 1rem 1.5rem 0rem 1.5rem;
+  margin: 2rem 1.5rem 1rem 1.5rem;
   border: 1px solid black;
+}
+
+#footer{
+  padding: 0;
+  border: 1px solid red;
 }
 
 @media (max-width: 925px) {

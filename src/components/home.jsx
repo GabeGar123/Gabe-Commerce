@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../App.css";
 import imageBanner from "../assets/Images/banner.jpg";
 import menShoeImage from "../assets/Images/shoe1.jpg";
@@ -105,7 +106,7 @@ function homePage() {
         </div>
       </div>
 
-      <div className="container my-5" id="footer">
+      <div className=" container-fluid my-5" id="footer">
         <footer className="bg-dark text-center text-white">
           <div className="container p-4 pb-0">
             <section className="mb-4">
@@ -114,7 +115,7 @@ function homePage() {
                 href="#!"
                 role="button"
               >
-                <i className="fab fa-linkedin"></i>
+                <i className="bi bi-person"></i>
               </a>
 
               <a
@@ -122,7 +123,7 @@ function homePage() {
                 href="#!"
                 role="button"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="bi bi-twitter"></i>
               </a>
 
               <a
@@ -130,23 +131,7 @@ function homePage() {
                 href="#!"
                 role="button"
               >
-                <i className="fab fa-google"></i>
-              </a>
-
-              <a
-                className="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-
-              <a
-                className="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-              >
-                <i className="fab fa-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
               </a>
 
               <a
@@ -157,6 +142,9 @@ function homePage() {
                 <i className="bi bi-github"></i>
               </a>
             </section>
+          </div>
+          <div class="text-center p-3">
+            @2023 Gabe Commerce. All Rights Reserved.
           </div>
         </footer>
       </div>
