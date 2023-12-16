@@ -10,13 +10,13 @@ import sportsShoeImage from "../assets/Images/shoe4.jpg";
 function homePage() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
-        <a class="navbar-brand mb-0" href="#">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+        <a className="navbar-brand mb-0" href="#">
           Gabe Commerce
         </a>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -24,46 +24,46 @@ function homePage() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div
-          class="collapse navbar-collapse justify-content-center"
+          className="collapse navbar-collapse justify-content-center"
           id="navbarNav"
         >
-          <ul class="navbar-nav" id="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+          <ul className="navbar-nav" id="nav-list">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#news" class="nav-link">
+            <li className="nav-item">
+              <a href="#news" className="nav-link">
                 Men
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">
+            <li className="nav-item">
+              <a href="#contact" className="nav-link">
                 Women
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">
+            <li className="nav-item">
+              <a href="#about" className="nav-link">
                 Kids
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">
+            <li className="nav-item">
+              <a href="#about" className="nav-link">
                 About
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">
+            <li className="nav-item">
+              <a href="#about" className="nav-link">
                 Sign In
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">
+            <li className="nav-item">
+              <a href="#about" className="nav-link">
                 Cart
               </a>
             </li>
@@ -74,38 +74,92 @@ function homePage() {
       <div id="banner-container">
         <img
           src={imageBanner}
-          class="banner-item-1 image-fluid"
+          className="banner-item-1 image-fluid"
           alt="main page banner"
         ></img>
-        <div class="banner-item-2">
-          <h3>Shop the latest trends in fashion</h3>
+        <div className="banner-item-2">
+          <h5>Shop the latest trends in fashion</h5>
         </div>
       </div>
 
-      <div id="collection" class="container text-center">
-        <div class="row">
-          <div id="men-option" class="col">
+      <div id="collection" className="container text-center">
+        <div className="row">
+          <div id="men-option" className="col">
             <img src={menShoeImage}></img>
             <h3>Shop Men</h3>
           </div>
-          <div id="women-option" class="col">
+          <div id="women-option" className="col">
             <img src={womenShoeImage}></img>
             <h3>Shop Women</h3>
           </div>
         </div>
-        <div class="row">
-          <div id="shoe-option" class="col">
+        <div className="row">
+          <div id="shoe-option" className="col">
             <img src={kidsShoeImage}></img>
             <h3>Shop Kids</h3>
           </div>
-          <div id="sports-option" class="col">
+          <div id="sports-option" className="col">
             <img src={sportsShoeImage}></img>
             <h3>Shop Sports</h3>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid my-5" id="footer"></div>
+      <div className="container my-5" id="footer">
+        <footer className="bg-dark text-center text-white">
+          <div className="container p-4 pb-0">
+            <section className="mb-4">
+              <a
+                className="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                className="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+
+              <a
+                className="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-google"></i>
+              </a>
+
+              <a
+                className="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+
+              <a
+                className="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                className="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+              >
+                <i className="bi bi-github"></i>
+              </a>
+            </section>
+          </div>
+        </footer>
+      </div>
     </>
   );
 }
