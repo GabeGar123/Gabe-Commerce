@@ -78,9 +78,13 @@ function homePage() {
           className="banner-item-1 image-fluid"
           alt="main page banner"
         ></img>
-        <div className="banner-item-2">
+        <div className="banner-item-2  bg-dark">
           <h5>Shop the latest trends in fashion</h5>
         </div>
+      </div>
+
+      <div className ="container-fluid text-center py-5" id="motto">
+        <h1>You Didn't Come This Far To Come This Far</h1>
       </div>
 
       <div id="collection" className="container text-center">
@@ -106,7 +110,7 @@ function homePage() {
         </div>
       </div>
 
-      <div className=" container-fluid my-5" id="footer">
+      <div className=" container-fluid my-5 mb-0" id="footer">
         <footer className="bg-dark text-center text-white">
           <div className="container p-4 pb-0">
             <section className="mb-4">
@@ -143,7 +147,7 @@ function homePage() {
               </a>
             </section>
           </div>
-          <div class="text-center p-3">
+          <div className="text-center p-3">
             @2023 Gabe Commerce. All Rights Reserved.
           </div>
         </footer>
