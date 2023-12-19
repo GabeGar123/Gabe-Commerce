@@ -83,29 +83,37 @@ function homePage() {
         </div>
       </div>
 
-      <div className ="container-fluid text-center py-5" id="motto">
+      <div className="container-fluid text-center py-5" id="motto">
         <h1>You Didn't Come This Far To Come This Far</h1>
       </div>
 
       <div id="collection" className="container text-center">
         <div className="row">
           <div id="men-option" className="col">
-            <img src={menShoeImage}></img>
-            <h3>Shop Men</h3>
+            <a href="/shop.jsx">
+              <img src={menShoeImage}></img>
+              <h3>Shop Men</h3>
+            </a>
           </div>
           <div id="women-option" className="col">
-            <img src={womenShoeImage}></img>
-            <h3>Shop Women</h3>
+            <a href="#">
+              <img src={womenShoeImage}></img>
+              <h3>Shop Women</h3>
+            </a>
           </div>
         </div>
         <div className="row">
           <div id="shoe-option" className="col">
-            <img src={kidsShoeImage}></img>
-            <h3>Shop Kids</h3>
+            <a href="#">
+              <img src={kidsShoeImage}></img>
+              <h3>Shop Kids</h3>
+            </a>
           </div>
           <div id="sports-option" className="col">
-            <img src={sportsShoeImage}></img>
-            <h3>Shop Sports</h3>
+            <a href="#">
+              <img src={sportsShoeImage}></img>
+              <h3>Shop Sports</h3>
+            </a>
           </div>
         </div>
       </div>
